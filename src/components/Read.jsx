@@ -5,8 +5,8 @@ const Read = (props) => {
 
    const render = todos.map(todo=>{
     return(
-      <div className=" flex items-center mt-4 justify-center">
-        <li className=" bg-gray-200 px-7 py-2 text-2xl rounded-xl w-[65%] flex items-center justify-between" 
+      <div className=" flex items-center justify-center">
+        <li className=" bg-gray-200 pl-7 mb-8 font-mono text-2xl rounded-xl w-[61%] flex items-center justify-between" 
         key={todo.id}>{todo.title} 
         <span className="font-black cursor-pointer border-3 rounded px-7 py-2" onClick={() =>deleteHandler(todo.id)}>X </span></li>
       </div>
@@ -20,8 +20,8 @@ const Read = (props) => {
   }
   return (
     <>
-      <h1 className="text-5xl mr-98 text-center mt-10 mb-10">Pending Works -</h1>
-      <ol className="list-item pl-10 mt-4">{render}</ol>
+      <h1 className="text-4xl mr-120 text-center mt-10 mb-5">Pending Works -</h1>
+      <ol className="list-item mt-4">{render}</ol>
       <div>
         <h1 className="h-96" ></h1>
       </div>

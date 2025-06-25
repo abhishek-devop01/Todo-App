@@ -22,13 +22,19 @@ const Create = (props) => {
     };
   return (
     <>
-      <div className='text-8xl font-black'>
-        <h1>TODO <br />  <span className='font-mono font-normal pl-10'><span>-</span>LIST</span> </h1>
+      <div className='text-7xl font-bold'>
+        <h1>TODO </h1>  
+        <span className='font-mono font-thin pl-10'>
+          <span>
+            -
+            </span>
+            LIST
+          </span>
       </div>
      <hr />
     <div className='  mt-8 text-center flex-col items-center justify-center'>
        <form onSubmit={submithandler}>
-        <input className='w-[50%] border-b-2 rounded p-2 text-3xl'
+        <input className='w-[50%] font-mono border-b-2 rounded p-2 text-3xl'
           value={title}
           required
           onChange={(e) => {
