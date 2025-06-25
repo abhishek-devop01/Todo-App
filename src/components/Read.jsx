@@ -20,7 +20,7 @@ const Read = (props) => {
   }
   return (
     <>
-      <h1 className="text-6xl mr-80 text-center mt-10 mb-10">Pending Works -</h1>
+      <h1 className="text-5xl mr-98 text-center mt-10 mb-10">Pending Works -</h1>
       <ol className="list-item pl-10 mt-4">{render}</ol>
       <div>
         <h1 className="h-96" ></h1>
